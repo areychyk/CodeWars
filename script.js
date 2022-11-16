@@ -41,10 +41,33 @@
 
   //task 3________________________________________________
 
-function highAndLow(numbers){
-  let arr = numbers.split(" ").map(Number)
+// function highAndLow(numbers){
+//   let arr = numbers.split(" ").map(Number)
 
-  return Math.max.apply(0, arr) + " " + Math.min.apply(0, arr)
+//   return Math.max.apply(0, arr) + " " + Math.min.apply(0, arr)
+// }
+
+// highAndLow("1 2 3 4 5");
+//end___________________________________
+
+  //task 4________________________________________________
+
+function spinWords(string){
+  let arr = string.split(" ");
+  let result= "";
+  for (let i=0; i<arr.length; i++){
+  if (arr[i]>=5){
+    result = arr[i].split("").reverse().join("");
+  }else{
+    result += " " + arr[i];
+  }
+  }
+  console.log (result)
 }
 
-highAndLow("1 2 3 4 5");
+spinWords("Welcome");
+
+// let arr= "Welcome";
+// let result=arr.split("").reverse().join("");
+
+// console.log (result);
