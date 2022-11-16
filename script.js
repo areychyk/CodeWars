@@ -52,20 +52,16 @@
 
   //task 4________________________________________________
 
-function spinWords(string){
-  let arr = string.split(" ");
-  let result= "";
-  for (let i=0; i<arr.length; i++){
-  if (arr[i]>=5){
-    result = arr[i].split("").reverse().join("");
-  }else{
-    result += " " + arr[i];
+  function spinWords(string){
+    return string.length >= 5 ? string
+          .split(" ")
+          .map((a) => (a.length >= 5 ? a.split("").reverse().join("") : a))
+          .join(" ")
+      : string;
   }
-  }
-  console.log (result)
-}
 
-spinWords("Welcome");
+
+
 
 // let arr= "Welcome";
 // let result=arr.split("").reverse().join("");
