@@ -52,13 +52,13 @@
 
   //task 4________________________________________________
 
-  function spinWords(string){
-    return string.length >= 5 ? string
-          .split(" ")
-          .map((a) => (a.length >= 5 ? a.split("").reverse().join("") : a))
-          .join(" ")
-      : string;
-  }
+  // function spinWords(string){
+  //   return string.length >= 5 ? string
+  //         .split(" ")
+  //         .map((a) => (a.length >= 5 ? a.split("").reverse().join("") : a))
+  //         .join(" ")
+  //     : string;
+  // }
 
 
 
@@ -67,3 +67,25 @@
 // let result=arr.split("").reverse().join("");
 
 // console.log (result);
+
+//end___________________________________
+
+ //task 5________________________________________________
+
+// Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
+
+
+// function digitalRoot(n) {
+//   if (n < 10) {
+//     return n;
+//   }
+
+//   while (n > 9) {
+//     let digits = n.toString().split("").map(Number);
+//     n = digits.reduce((sum, current) => sum + current);
+//   }
+
+//   return n;
+// }
+
+//end___________________________________
