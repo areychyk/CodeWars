@@ -11,9 +11,9 @@
 // "1a2b3c4d5e".toAlternatingCase()  === "1A2B3C4D5E"
 // "String.prototype.toAlternatingCase".toAlternatingCase() === "sTRING.PROTOTYPE.TOaLTERNATINGcASE"
 
-String.prototype.toAlternatingCase = function () {
-    return this.split('').map(function (a){ return a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()}).join("");
-  }
+// String.prototype.toAlternatingCase = function () {
+//     return this.split('').map(function (a){ return a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()}).join("");
+//   }
   
 
   //__________________________________________________________end/
@@ -32,9 +32,19 @@ String.prototype.toAlternatingCase = function () {
 // Note: for this kata y isn't considered a vowel.
 
 
-function disemvowel(str) {
-  let consonants = str.replace(/[aeiou]/gi, '');
-  return consonants;
-}
+// function disemvowel(str) {
+//   let consonants = str.replace(/[aeiou]/gi, '');
+//   return consonants;
+// }
 
 //end___________________________________
+
+  //task 3________________________________________________
+
+function highAndLow(numbers){
+  let arr = numbers.split(" ").map(Number)
+
+  return Math.max.apply(0, arr) + " " + Math.min.apply(0, arr)
+}
+
+highAndLow("1 2 3 4 5");
