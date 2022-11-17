@@ -92,10 +92,32 @@
 
 
  //task 6________________________________________________
+
 //  You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.
 
 
 // function sortArray(array) {
 //   const odd = array.filter((x) => x % 2).sort((a,b) => a - b);
 //   return array.map((x) => x % 2 ? odd.shift() : x);
+// }
+//end___________________________________
+
+
+ //task 7________________________________________________
+
+
+// Given an array of integers your solution should find the smallest integer.
+
+// For example:
+
+// Given [34, 15, 88, 2] your solution will return 2
+// Given [34, -345, -1, 100] your solution will return -345
+// You can assume, for the purpose of this kata, that the supplied array will not be empty.
+
+// class SmallestIntegerFinder {
+//   findSmallestInt(args) {
+//     args.sort(function(a, b) {
+//     return a - b; } )
+//     return args[0];
+//   }
 // }
