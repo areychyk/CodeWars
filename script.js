@@ -14,12 +14,12 @@
 // String.prototype.toAlternatingCase = function () {
 //     return this.split('').map(function (a){ return a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()}).join("");
 //   }
-  
-
-  //__________________________________________________________end/
 
 
-  //task 2________________________________________________
+//__________________________________________________________end/
+
+
+//task 2________________________________________________
 
 //   Trolls are attacking your comment section!
 
@@ -39,7 +39,7 @@
 
 //end___________________________________
 
-  //task 3________________________________________________
+//task 3________________________________________________
 
 // function highAndLow(numbers){
 //   let arr = numbers.split(" ").map(Number)
@@ -50,17 +50,15 @@
 // highAndLow("1 2 3 4 5");
 //end___________________________________
 
-  //task 4________________________________________________
+//task 4________________________________________________
 
-  // function spinWords(string){
-  //   return string.length >= 5 ? string
-  //         .split(" ")
-  //         .map((a) => (a.length >= 5 ? a.split("").reverse().join("") : a))
-  //         .join(" ")
-  //     : string;
-  // }
-
-
+// function spinWords(string){
+//   return string.length >= 5 ? string
+//         .split(" ")
+//         .map((a) => (a.length >= 5 ? a.split("").reverse().join("") : a))
+//         .join(" ")
+//     : string;
+// }
 
 
 // let arr= "Welcome";
@@ -70,7 +68,7 @@
 
 //end___________________________________
 
- //task 5________________________________________________
+//task 5________________________________________________
 
 // Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
 
@@ -91,7 +89,7 @@
 //end___________________________________
 
 
- //task 6________________________________________________
+//task 6________________________________________________
 
 //  You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.
 
@@ -103,7 +101,7 @@
 //end___________________________________
 
 
- //task 7________________________________________________
+//task 7________________________________________________
 
 
 // Given an array of integers your solution should find the smallest integer.
@@ -126,7 +124,7 @@
 //end___________________________________
 
 
- //task 8________________________________________________
+//task 8________________________________________________
 
 //  You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
 
@@ -139,9 +137,8 @@
 // ["Alex", "Jacob", "Mark", "Max"]    "Alex, Jacob and 2 others like this"
 
 
-
 // function likes(names) {
-  
+
 //   if(names.length === 0){
 //     return "no one likes this"
 //   } if (names.length === 1){
@@ -162,7 +159,7 @@
 //end___________________________________
 
 
- //task 9________________________________________________
+//task 9________________________________________________
 
 //  Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
@@ -181,7 +178,7 @@
 //end___________________________________
 
 
- //task 10________________________________________________
+//task 10________________________________________________
 
 // Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return a or b.
 
@@ -206,11 +203,10 @@
 // }
 
 
-
 //end___________________________________
 
 
- //task 11________________________________________________
+//task 11________________________________________________
 
 
 //  Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
@@ -241,4 +237,55 @@
 //end___________________________________
 
 
- //task 12________________________________________________
+//task 12___________________________________________
+
+
+
+// A square of squares
+// You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square building blocks!
+//
+//     However, sometimes, you can't arrange them into a square. Instead, you end up with an ordinary rectangle! Those blasted things! If you just had a way to know, whether you're currently working in vain… Wait! That's it! You just have to check if your number of building blocks is a perfect square.
+//
+// Task
+// Given an integral number, determine if it's a square number:
+//
+// In mathematics, a square number or perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself.
+//
+//     The tests will always use some integral number, so don't worry about that in dynamic typed languages.
+//
+// Examples
+// -1  =>  false
+// 0  =>  true
+// 3  =>  false
+// 4  =>  true
+// 25  =>  true
+// 26  =>  false
+// isSquare (-1) // => false
+// isSquare   3  // => false
+// isSquare   4  // => true
+// isSquare  25  // => true
+// isSquare  26  // => false
+
+// console.log(Math.sqrt(25))
+
+//  function square (n) {
+//     let sqrt = Math.sqrt(n)
+//     if (Number.isInteger(sqrt) === true){
+//         return true
+//     }else{
+//         return false
+//     }
+//
+// }
+
+// or
+
+// function isSquare(n) {
+//     return Math.sqrt(n) % 1 === 0;
+// }
+
+
+// console.log(Math.sqrt(26) % 1)
+// // console.log(Math.sqrt(26) % 2)
+// console.log(square(-1))
+// console.log(Number.isInteger())
