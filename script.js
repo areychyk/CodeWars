@@ -404,3 +404,139 @@
 
 
 //end___________________________________
+
+
+//task 14_____________________________________
+
+// Simple, remove the spaces from the string, then return the resultant string.
+
+// function noSpace(x){
+//   return x.replace(/\s/g, '')
+// }
+
+
+//end___________________________________
+
+//task 17_____________________________________
+
+// Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+
+// var summation = function (num) {
+//   let sum =0;
+//  while (num>=0){
+//    sum = sum + num;
+//    num--
+//  }
+//   return sum
+// }
+
+//end___________________________________
+
+//task 18_____________________________________
+
+// Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+
+// function repeatStr (n, s) {
+//   let sum = "";
+//   while (n>0){
+//     sum +=s
+//     n--
+//   }
+//   return sum;
+// }
+
+//end___________________________________
+
+
+//task 19_____________________________________
+
+// It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+
+// function removeChar(str){
+
+//   return str.slice(1,-1)
+// };
+
+
+//end___________________________________
+
+
+//task 20_____________________________________
+
+// We need a function that can transform a number (integer) into a string.
+
+// What ways of achieving this do you know?
+
+// function numberToString(num) {
+//   return num.toString();
+// }
+
+
+//end___________________________________
+
+//task 21_____________________________________
+
+// Simple, given a string of words, return the length of the shortest word(s).
+
+// String will never be empty and you do not need to account for different data types.
+
+
+// function findShort(s){
+//   let arr = s.split(" ").sort((a, b) => a.length - b.length);
+//   return arr[0].length
+// }
+//end___________________________________
+
+//task 22_____________________________________
+// Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+
+// function boolToWord( bool ){
+//   if(bool){
+//     return "Yes";
+//   }else{
+//     return "No"
+//   }
+// }
+
+//end___________________________________
+
+//task 23_____________________________________
+
+// Complete the solution so that it reverses the string passed into it.
+
+
+// function solution(str){
+//   return str.split("").reverse().join("");
+
+// }
+
+//end___________________________________
+
+//task 24_____________________________________
+
+
+// In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+// function makeNegative(num) {
+//   if (num<0){
+//     return num;
+//   }else if (num>0){
+//     return -num;
+//   }else{
+//     return 0
+//   }
+
+// }
+
+//end___________________________________
+
+//task 25_____________________________________
+
+
+// Very simple, given an integer or a floating-point number, find its opposite.
+
+// function opposite(number) {
+//   return number*(-1);
+// }
+
+//end___________________________________
