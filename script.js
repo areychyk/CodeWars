@@ -326,3 +326,81 @@
 // console.log(basicOp('-', 15, 18))
 // console.log(basicOp('*', 5, 5))
 // console.log(basicOp('/', 49, 7))
+
+
+// __________end_____________________________
+
+
+// ________________task 14___________________________
+
+// Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+// For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1.
+
+// Note: The function accepts an integer and returns an integer
+
+
+
+// function squareDigits(num){
+//   let newArr = String(num).split("").map((num)=>{return Number(num*num)}).join("");
+//   return Number(newArr)
+
+
+// }
+
+// __________end_____________________________
+
+
+// ________________task 15___________________________
+
+// You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.
+
+
+// function sortArray(array) {
+//   const oddArr = [];
+//   const evenArr = [];
+//   const result = [];
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i]%2 === 0) {
+//       evenArr.push(array[i]);
+//     } else {
+//       oddArr.push(array[i]);
+//     }
+//   }
+//   oddArr.sort((a, b) => a - b);
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i]%2 === 0) {
+//       result.push(evenArr.shift());
+//     } else {
+//       result.push(oddArr.shift());
+//     }
+//   }
+//   return result;
+// }
+
+//task 16_____________________________________
+
+// Given an array of integers your solution should find the smallest integer.
+
+// For example:
+
+// Given [34, 15, 88, 2] your solution will return 2
+// Given [34, -345, -1, 100] your solution will return -345
+// You can assume, for the purpose of this kata, that the supplied array will not be empty.
+
+
+// class SmallestIntegerFinder {
+//   findSmallestInt(args) {
+//     let num = args[0];
+//     for (let i=0; i<args.length; i++){
+//       if (args[i]<num){
+//         num = args[i]
+//       }
+//     }
+//     return num
+
+//   }
+// }
+
+
+//end___________________________________
