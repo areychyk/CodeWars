@@ -540,3 +540,81 @@
 // }
 
 //end___________________________________
+
+
+//task 26_____________________________________
+
+
+// You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
+//
+//     #Examples:
+//
+// Kata.getMiddle("test") should return "es"
+//
+// Kata.getMiddle("testing") should return "t"
+//
+// Kata.getMiddle("middle") should return "dd"
+//
+// Kata.getMiddle("A") should return "A"
+// #Input
+//
+// A word (string) of length 0 < str < 1000 (In javascript you may get slightly more than 1000 in some test cases due to an error in the test cases). You do not need to test for this. This is only here to tell you that you do not need to worry about your solution timing out.
+//
+//     #Output
+//
+// The middle character(s) of the word represented as a string.
+
+// function getMiddle(s) {
+// let middle = Math.floor(s.length/2)
+//     if(s.length%2===0){
+//         return s[middle-1] + s[middle]
+//     }else{
+//         return s[middle]
+//     }
+//
+//
+// }
+//
+// console.log(getMiddle("test"))
+
+//end___________________________________
+
+//task 27_____________________________________
+
+// Создайте функцию, которая возвращает сумму двух наименьших положительных чисел для заданного массива минимум из 4 положительных целых чисел. Не будут переданы числа с плавающей запятой или неположительные целые числа.
+//
+//     Например, когда массив передается как [19, 5, 42, 2, 77], вывод должен быть 7.
+//
+//     [10, 343445353, 3453445, 3453545353453]должен вернуться 3453455.
+// let arr= [19, 5, 42, 2, 77];
+
+// function sumTwoSmallestNumbers(numbers) {
+//     let minOne=numbers[0]
+//     for(let i=1;i<numbers.length; i++){
+//         if(numbers[i]<minOne) {
+//             minOne=numbers[i]
+//         }
+//         }
+//     return minOne
+//     }
+
+// function sumTwoSmallestNumbers(numbers) {
+//     let sortArr = numbers.sort((a,b)=>a-b)
+//     return sortArr[0]+sortArr[1]
+// }
+// console.log(sumTwoSmallestNumbers(arr))
+
+
+
+// function min(obj) {
+//     var a = obj[0];
+//     for (var i = 1; i < obj.length; i++) {
+//         if (obj[i] < a) {
+//             a = obj[i];
+//         }
+//     }
+//     return a;
+// }
+//
+// console.log(min(arr))
+
