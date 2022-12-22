@@ -618,3 +618,69 @@
 //
 // console.log(min(arr))
 
+
+//end___________________________________
+
+//task 28_____________________________________
+
+
+// Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.
+//
+//
+//     function shortcut (string) {
+//     return string.replace(/[aeiou]/gi, '')
+// }
+
+
+//end___________________________________
+
+//task 29_____________________________________
+
+// The Collatz conjecture (also known as 3n+1 conjecture) is a conjecture that applying the following algorithm to any number we will always eventually reach one:
+//
+//     [This is writen in pseudocode]
+// if(number is even) number = number / 2
+// if(number is odd) number = 3*number + 1
+// #Task
+//
+// Your task is to make a function hotpo that takes a positive n as input and returns the number of times you need to perform this algorithm to get n = 1.
+
+// var hotpo = function(n){
+//     if(n == 0) return 0; //Optional Handler to n = 0
+//
+// }
+
+// var hotpo = function(n){
+//     while (n===1){
+//         if(n % 2 === 0) return n/2;
+//         // if(n % 2 === 1) return 3*n+1;
+//     }
+//
+//
+// }
+
+// var hotpo = function(n){
+//     let c=0
+// while (n>1){
+//     n= n%2===0 ? n/2 : 3*n+1
+//     c++
+// }
+// return c
+//
+//
+//
+//
+// }
+
+// var hotpo = function(n){
+//     var c = 0;
+//
+//     while (n > 1) {
+//         n = n % 2 ? 3 * n + 1 : n / 2;
+//         c++;
+//     }
+//
+//     return c;
+// }
+//
+// console.log(hotpo(3))
