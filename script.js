@@ -766,3 +766,99 @@
 //     function removeExclamationMarks(s) {
 //     return s.replace(/[!]/gi,"")
 // }
+
+
+//end___________________________________
+
+//task 32_____________________________________
+
+
+// The Collatz Conjecture states that for any positive natural number n, this process:
+//
+//     if n is even, divide it by 2
+// if n is odd, multiply it by 3 and add 1
+// repeat
+// will eventually reach n = 1.
+//
+// For example, if n = 20, the resulting sequence will be:
+//
+//     [ 20, 10, 5, 16, 8, 4, 2, 1 ]
+// Write a program that will output the length of the Collatz Conjecture for any given n.
+//     In the example above, the output would be 8.
+
+
+
+// function collatz(n) {
+//
+//     let a=[]
+//
+//    while (n<=1)
+//     if(n%2===0){
+//         a++
+//     }else{
+//         a++
+//     }
+//     return a
+//
+// }
+// function collatz(n) {
+//     let c = 0
+//     while (n > 1) {
+//         n = n % 2 === 0 ? n / 2 : 3 * n + 1
+//         c++
+//     }
+//     return c+1
+// }
+// console.log(collatz(20))
+//
+//
+// function collatz(n) {
+//     var l = 1;
+//     while(n > 1) {
+//         l++
+//         n = n % 2 == 0 ? n / 2 : n * 3 + 1;
+//     }
+//     return l;
+// }
+
+
+//end___________________________________
+
+//task 33_____________________________________
+
+
+
+// Task
+// Given a string str, reverse it and omit all non-alphabetic characters.
+//
+//     Example
+// For str = "krishan", the output should be "nahsirk".
+//
+//     For str = "ultr53o?n", the output should be "nortlu".
+//
+//     Input/Output
+//     [input] string str
+// A string consists of lowercase latin letters, digits and symbols.
+//
+//     [output] a string
+
+
+// function reverseLetter(str) {
+//     return str.split("").reverse().
+//
+//
+// }
+// function reverseLetter(str) {
+//     return str.replace(/[^a-zа-яё]/gi, '').split("").reverse().join('')
+//     // return str.replace(/[0-9,?,@]/gi, '').split("").reverse().join('')
+//
+//
+// }
+
+
+// function disemvowel(str) {
+//   let consonants = str.replace(/[aeiou]/gi, '');
+//   return consonants;
+// }
+
+// console.log(reverseLetter("krisha5n05?@"))
