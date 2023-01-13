@@ -862,3 +862,100 @@
 // }
 
 // console.log(reverseLetter("krisha5n05?@"))
+
+
+
+//end___________________________________
+
+//task 34_____________________________________
+
+
+//
+// We need to write some code to return the original price of a product, the return type must be of type decimal and the number must be rounded to two decimal places.
+//
+//     We will be given the sale price (discounted price), and the sale percentage, our job is to figure out the original price.
+//
+//     For example:
+//     Given an item at $75 sale price after applying a 25% discount, the function should return the original price of that item before applying the sale percentage, which is ($100.00) of course, rounded to two decimal places.
+//
+// DiscoverOriginalPrice(75, 25) => 100.00M where 75 is the sale price (discounted price), 25 is the sale percentage and 100 is the original price
+
+// function discoverOriginalPrice(discountedPrice, salePercentage){
+//     // return Math.round(discountedPrice/(1-salePercentage/100))
+//     return Math.round(discountedPrice / (1 - salePercentage / 100) * 100) / 100;
+//
+// }
+//
+// console.log(discoverOriginalPrice(75.88,33))
+
+
+//end___________________________________
+
+//task 35_____________________________________
+
+
+// An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+//
+// Example: (Input --> Output)
+//
+// "Dermatoglyphics" --> true "aba" --> false "moOse" --> false (ignore letter case)
+//
+// isIsogram "Dermatoglyphics" = true
+// isIsogram "moose" = false
+// isIsogram "aba" = false
+
+
+
+// function isIsogram(str){
+//   let arrStr = str.toLowerCase()
+//
+//     for (let i = 0; i < arrStr.length; i++) {
+//         for (let j = i+1; j < arrStr.length; j++) {
+//             if(arrStr[i]===arrStr[j]){
+//                 return false
+//             }
+//         }
+//
+//         }
+// return true
+//
+// }
+// function isIsogram(str){
+//
+//     str = str.toLowerCase();
+//     for(let i = 0; i < str.length; ++i) {
+//         for(let j = i + 1; j < str.length; ++j) {
+//             if(str[i] === str[j]) {
+//                 return false;
+//             }
+//         }
+//     }
+//     return true;
+// }
+// function isIsogram(str){
+//     var hash = {};
+//     str = str.toLowerCase();
+//     for (var i = 0; i < str.length; i++) {
+//         if (hash[str[i]]) {
+//             return false;
+//         }
+//         hash[str[i]] = true;
+//     }
+//     return true;
+// }
+
+// console.log(isIsogram('aba'))//false
+// console.log(isIsogram('moOse'))//false
+// console.log(isIsogram('Dermatoglyphics'))//true
+
+
+// describe("Tests", () => {
+//     it("test", () => {
+//         assert.strictEqual( isIsogram("Dermatoglyphics"), true );
+//         assert.strictEqual( isIsogram("isogram"), true );
+//         assert.strictEqual( isIsogram("aba"), false, "same chars may not be adjacent" );
+//         assert.strictEqual( isIsogram("moOse"), false, "same chars may not be same case" );
+//         assert.strictEqual( isIsogram("isIsogram"), false );
+//         assert.strictEqual( isIsogram(""), true, "an empty string is a valid isogram" );
+//     });
+// });
