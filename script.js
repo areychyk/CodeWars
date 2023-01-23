@@ -981,3 +981,106 @@
 //
 //
 // s[2].repeat(s.indexOf(s[2+1]))
+
+//end___________________________________
+
+
+
+
+
+
+//task 37_____________________________________
+
+
+// function sumCubes(n) {
+//     if(n==1){
+//         return 1
+//     }else{
+//         return n**3 + sumCubes(n-1)
+//     }
+//
+//
+//
+// }
+//
+// console.log(sumCubes(3))
+
+
+
+//end___________________________________
+
+//task 38_____________________________________
+
+
+// Create a function called _if which takes 3 arguments: a value bool and 2 functions (which do not take any parameters): func1 and func2
+//
+// When bool is truthy, func1 should be called, otherwise call the func2.
+//
+//     Example:
+// _if(true, function(){console.log("True")}, function(){console.log("false")})
+// // Logs 'True' to the console.
+//
+//
+//
+// function _if(bool, func1, func2) {
+//     if(bool){
+//         func1()
+//     }else{
+//         func2()
+//     }
+// }
+
+
+//end___________________________________
+
+//task 39_____________________________________
+
+
+
+// Return a function that will trim a string (the first argument given) if it is longer than the maximum string length (the second argument given). The result should also end with "..."
+//
+//     These dots at the end also add to the string length.
+//
+//     So in the above example, trim("Creating kata is fun", 14) should return "Creating ka..."
+//
+// If the string is smaller than or equal to 3 characters then the length of the dots is not added to the string length.
+//
+// e.g. trim("He", 1) should return "H..."
+//
+// If the string is smaller or equal than the maximum string length, then simply return the string with no trimming or dots required.
+//
+// e.g. trim("Code Wars is pretty rad", 50) should return "Code Wars is pretty rad"
+
+
+
+// function trim(str, size) {
+//     if(str.length<=size) {
+//         return str
+//
+//     } else if(str.length<=3){
+//         return str.slice(0,size)+ `...`
+//
+//     }
+//     else if(str.length>size){
+//         return str.slice(0,size-3) + `...`
+//
+//     }
+// }
+// function trim(str, size) {
+// if(str.length > size){
+//     if(size > 3){
+//         str = str.slice(0,size - 3) + '...';
+//     }
+//     else{
+//         str = str.slice(0,size) + '...';
+//     }
+// }
+// return str;
+// }
+//
+//
+// console.log(trim('Hi',1))
+// console.log(trim("Creating kata is fun", 14))
+// console.log(trim("Code Wars is pretty rad", 50))
+// console.log(trim("iLwT", 3))//
+// console.log(trim("CFfWf", 3))//CFf...
