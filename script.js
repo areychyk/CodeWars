@@ -1134,3 +1134,78 @@
 // assert.deepEqual(arrayDiff([1,2,2], []), [1,2,2], "a was [1,2,2], b was []");
 // assert.deepEqual(arrayDiff([], [1,2]), [], "a was [], b was [1,2]");
 // assert.deepEqual(arrayDiff([1,2,3], [1,2]), [3], "a was [1,2,3], b was [1,2]")
+
+
+
+//end___________________________________
+
+//task 41_____________________________________
+
+// Given an array of integers, find the one that appears an odd number of times.
+//
+//     There will always be only one integer that appears an odd number of times.
+//
+//     Examples
+//     [7] should return 7, because it occurs 1 time (which is odd).
+// [0] should return 0, because it occurs 1 time (which is odd).
+// [1,1,2] should return 2, because it occurs 1 time (which is odd).
+// [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
+// [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
+
+
+
+
+
+// function findOdd(A) {
+//     const newArray = (arr, val) => arr.filter((el) => el === val);
+//     let resul = 0;
+//     A.forEach((element) => {
+//         if (newArray(A, element).length % 2 !== 0) {
+//             resul = element;
+//         }
+//     });
+//     return resul;
+// }
+//
+//
+// console.log(findOdd([1,1,2]))
+// console.log(findOdd([0,1,0,1,0]))
+
+
+
+//end___________________________________
+
+//task 42_____________________________________
+
+
+// Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+//
+//     Example
+// createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
+// The returned format must be correct in order to complete this challenge.
+//
+//     Don't forget the space after the closing parentheses!
+
+
+
+
+// function createPhoneNumber(numbers){
+//     return `(${numbers.slice(0,3).join('')}) ${numbers.slice(3,6).join('')}-${numbers.slice(6,10).join('')}`
+//
+// }
+//
+// console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]))
+
+
+//
+//
+// function createPhoneNumber(numbers){
+//     var format = "(xxx) xxx-xxxx";
+//
+//     for(var i = 0; i < numbers.length; i++)
+//     {
+//         format = format.replace('x', numbers[i]);
+//     }
+//
+//     return format;
+// }
