@@ -340,7 +340,6 @@
 // Note: The function accepts an integer and returns an integer
 
 
-
 // function squareDigits(num){
 //   let newArr = String(num).split("").map((num)=>{return Number(num*num)}).join("");
 //   return Number(newArr)
@@ -605,7 +604,6 @@
 // console.log(sumTwoSmallestNumbers(arr))
 
 
-
 // function min(obj) {
 //     var a = obj[0];
 //     for (var i = 1; i < obj.length; i++) {
@@ -753,12 +751,9 @@
 // }
 
 
-
-
 //end___________________________________
 
 //task 31_____________________________________
-
 
 
 // Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
@@ -785,7 +780,6 @@
 //     [ 20, 10, 5, 16, 8, 4, 2, 1 ]
 // Write a program that will output the length of the Collatz Conjecture for any given n.
 //     In the example above, the output would be 8.
-
 
 
 // function collatz(n) {
@@ -827,7 +821,6 @@
 //task 33_____________________________________
 
 
-
 // Task
 // Given a string str, reverse it and omit all non-alphabetic characters.
 //
@@ -862,7 +855,6 @@
 // }
 
 // console.log(reverseLetter("krisha5n05?@"))
-
 
 
 //end___________________________________
@@ -903,7 +895,6 @@
 // isIsogram "Dermatoglyphics" = true
 // isIsogram "moose" = false
 // isIsogram "aba" = false
-
 
 
 // function isIsogram(str){
@@ -985,10 +976,6 @@
 //end___________________________________
 
 
-
-
-
-
 //task 37_____________________________________
 
 
@@ -1004,7 +991,6 @@
 // }
 //
 // console.log(sumCubes(3))
-
 
 
 //end___________________________________
@@ -1036,7 +1022,6 @@
 //task 39_____________________________________
 
 
-
 // Return a function that will trim a string (the first argument given) if it is longer than the maximum string length (the second argument given). The result should also end with "..."
 //
 //     These dots at the end also add to the string length.
@@ -1050,7 +1035,6 @@
 // If the string is smaller or equal than the maximum string length, then simply return the string with no trimming or dots required.
 //
 // e.g. trim("Code Wars is pretty rad", 50) should return "Code Wars is pretty rad"
-
 
 
 // function trim(str, size) {
@@ -1084,8 +1068,6 @@
 // console.log(trim("Code Wars is pretty rad", 50))
 // console.log(trim("iLwT", 3))//
 // console.log(trim("CFfWf", 3))//CFf...
-
-
 
 
 //end___________________________________
@@ -1126,15 +1108,12 @@
 // console.log(arrayDiff([1,2,3], [1,2]))
 
 
-
-
 // assert.deepEqual(arrayDiff([1,2], [1]), [2], "a was [1,2], b was [1]");
 // assert.deepEqual(arrayDiff([1,2,2], [1]), [2,2], "a was [1,2,2], b was [1]");
 // assert.deepEqual(arrayDiff([1,2,2], [2]), [1], "a was [1,2,2], b was [2]");
 // assert.deepEqual(arrayDiff([1,2,2], []), [1,2,2], "a was [1,2,2], b was []");
 // assert.deepEqual(arrayDiff([], [1,2]), [], "a was [], b was [1,2]");
 // assert.deepEqual(arrayDiff([1,2,3], [1,2]), [3], "a was [1,2,3], b was [1,2]")
-
 
 
 //end___________________________________
@@ -1153,9 +1132,6 @@
 // [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 
 
-
-
-
 // function findOdd(A) {
 //     const newArray = (arr, val) => arr.filter((el) => el === val);
 //     let resul = 0;
@@ -1172,7 +1148,6 @@
 // console.log(findOdd([0,1,0,1,0]))
 
 
-
 //end___________________________________
 
 //task 42_____________________________________
@@ -1185,8 +1160,6 @@
 // The returned format must be correct in order to complete this challenge.
 //
 //     Don't forget the space after the closing parentheses!
-
-
 
 
 // function createPhoneNumber(numbers){
@@ -1209,3 +1182,87 @@
 //
 //     return format;
 // }
+
+
+//end___________________________________
+
+
+//task 43_____________________________________
+
+
+// You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this "outlier" N.
+//
+//     Examples
+//     [2, 4, 0, 100, 4, 11, 2602, 36]
+// Should return: 11 (the only odd number)
+//
+// [160, 3, 1719, 19, 11, 13, -21]
+// Should return: 160 (the only even number)
+
+
+
+
+//
+// function findOutlier(integers) {
+//     let even = []
+//     let odd = []
+//
+//     for (let i = 0; i < integers.length; i++) {
+//         (integers[i] % 2 === 0)
+//             ? even.push(integers[i])
+//             : odd.push(integers[i])
+//     }
+//
+//
+//     return even.length === 1 ? even[0] : odd[0]
+// }
+
+
+// console.log(findOutlier([0, 1, 2]))
+// console.log(findOutlier([1, 2, 3]))
+// console.log(findOutlier([2, 6, 8, 10, 3]))
+// console.log(findOutlier([0, 0, 3, 0, 0]))
+// console.log(findOutlier([1, 1, 0, 1, 1]))
+// console.log(findOutlier([1, 1, 1]))
+// console.log(findOutlier([2, 2, 2]))
+
+
+//end___________________________________
+
+
+//task 44_____________________________________
+
+
+// Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+//
+//     Examples input/output:
+//
+// XO("ooxx") => true
+// XO("xooxx") => false
+// XO("ooxXm") => true
+// XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+// XO("zzoo") => false
+
+
+
+// function XO(str) {
+// let arr = str.toLowerCase().split('')
+//     let resultX =[]
+//     let resultO =[]
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i]==='x'){
+//             resultX.push(arr[i])
+//         }else if(arr[i]==='o'){
+//             resultO.push(arr[i])
+//         }
+//
+//     }
+//
+//     return resultX.length===resultO.length
+// }
+//
+// console.log(XO('xo'))
+// console.log(XO("xxOo"))
+// console.log(XO("xxxm"))
+// console.log(XO("Oo"))
+// console.log(XO("ooom"))
