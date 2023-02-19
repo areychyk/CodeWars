@@ -1200,8 +1200,6 @@
 // Should return: 160 (the only even number)
 
 
-
-
 //
 // function findOutlier(integers) {
 //     let even = []
@@ -1244,7 +1242,6 @@
 // XO("zzoo") => false
 
 
-
 // function XO(str) {
 // let arr = str.toLowerCase().split('')
 //     let resultX =[]
@@ -1266,3 +1263,86 @@
 // console.log(XO("xxxm"))
 // console.log(XO("Oo"))
 // console.log(XO("ooom"))
+
+//end___________________________________
+
+
+//task 45_____________________________________
+
+
+//
+// Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized.
+//
+//     Examples
+// "the-stealth-warrior" gets converted to "theStealthWarrior"
+// "The_Stealth_Warrior" gets converted to "TheStealthWarrior"
+
+
+// function toCamelCase(str) {
+//
+//     let arr = str.split(/\s*-|_\s*/)
+//
+// if(str.length){
+//     return arr.map(w=>w[0].toUpperCase() + w.slice(1)).join('').toString()
+// }
+// return str
+//
+// }
+
+
+
+
+// function toCamelCase(str){
+//     str = str.split('');
+//     return str.map(function(el, i){
+//         if(el === '-' || el === '_'){
+//             el = str[i+1].toUpperCase();
+//             str.splice(i+1, 1);
+//         }
+//         return el;
+//     }).join('');
+// }
+//
+// console.log(toCamelCase("the-stealth-warrior"))
+// console.log(toCamelCase("the_stealth_warrior"))
+// console.log(toCamelCase("The_Stealth_Warrior"))
+// console.log(toCamelCase("A-B-C"))
+// console.log(toCamelCase(""))
+
+
+//end___________________________________
+
+
+//task 46_____________________________________
+
+//
+// A Narcissistic Number (or Armstrong Number) is a positive number which is the sum of its own digits, each raised to the power of the number of digits in a given base. In this Kata, we will restrict ourselves to decimal (base 10).
+//
+// For example, take 153 (3 digits), which is narcissistic:
+//
+//     1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
+// and 1652 (4 digits), which isn't:
+//
+// 1^4 + 6^4 + 5^4 + 2^4 = 1 + 1296 + 625 + 16 = 1938
+// The Challenge:
+//
+//     Your code must return true or false (not 'true' and 'false') depending upon whether the given number is a Narcissistic number in base 10. This may be True and False in your language, e.g. PHP.
+//
+//     Error checking for text strings or other invalid inputs is not required, only valid positive non-zero integers will be passed into the function.
+
+
+
+function narcissistic(value) {
+    // Code me to return true or false
+    let arr=value.toString().split('')
+    let square= arr.map((num,index)=>num**arr.length)
+    let result=0;
+    for (let i = 0; i < square.length; i++) {
+        result += square[i]
+    }
+    return result===value
+}
+
+
+console.log(narcissistic(153))
+console.log(narcissistic(1652 ))
