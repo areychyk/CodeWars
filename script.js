@@ -1370,3 +1370,116 @@
 
 // Test.assertEquals(chromosomeCheck('XY'), "Congratulations! You're going to have a son.")
 // Test.assertEquals(chromosomeCheck('XX'), "Congratulations! You're going to have a daughter.")
+
+
+
+//end___________________________________
+
+
+//task 48_____________________________________
+
+
+// My washing machine uses water amount of water to wash load (in JavaScript and Python) or max_load (in Ruby) amount of clothes. You are given a clothes amount of clothes to wash. For each single item of clothes above the load, the washing machine will use 10% more water (multiplicative) to clean.
+//
+//     For example, if the load is 10, the amount of water it requires is 5 and the amount of clothes to wash is 14, then you need 5 * 1.1 ^ (14 - 10) amount of water.
+//
+//     Write a function howMuchWater (JS)/how_much_water (Python and Ruby) to work out how much water is needed if you have a clothes amount of clothes. The function will accept 3 arguments: - water, load (or max_loadin Ruby) and clothes.
+//
+//     My washing machine is an old model that can only handle double the amount of load (or max_load). If the amount of clothes is more than 2 times the standard amount of load (max_load), return 'Too much clothes'. The washing machine also cannot handle any amount of clothes less than load (max_load). If that is the case, return 'Not enough clothes'.
+//
+//     The answer should be rounded to the nearest 2 decimal places.
+
+
+// function howMuchWater(water, load, clothes){
+//     if(clothes/load>2){
+//         return 'Too much clothes'
+//     }
+//     if(clothes<load){
+//         return 'Not enough clothes'
+//     }
+//     return Number((water*1.1**(clothes-load)).toFixed(2))
+// }
+//
+//
+// console.log(howMuchWater(10,10,21))
+// console.log(howMuchWater(10,10,2))
+// console.log(howMuchWater(10,11,20))
+// console.log(howMuchWater(50,15,29))
+
+
+
+//end___________________________________
+
+
+//task 49_____________________________________
+
+
+// This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+// function simpleMultiplication(number) {
+//    if(number%2===0){
+//        return number*8
+//    }
+//    return number*9
+// }
+//
+// console.log(simpleMultiplication(2))
+
+
+
+//end___________________________________
+
+
+//task 50_____________________________________
+
+
+
+// Your task is to find the nearest square number, nearest_sq(n) or nearestSq(n), of a positive integer n.
+//
+//     For example, if n = 111, then nearest\_sq(n) (nearestSq(n)) equals 121, since 111 is closer to 121, the square of 11, than 100, the square of 10.
+//
+// If the n is already the perfect square (e.g. n = 144, n = 81, etc.), you need to just return n.
+//
+//     Good luck :)
+
+
+
+// function nearestSq(n){
+//     return Math.sqrt(n).toFixed()**2
+// }
+//
+// console.log(nearestSq(1))
+// console.log(nearestSq(111))
+// console.log(nearestSq(2))
+// console.log(nearestSq(10))
+
+
+
+//end___________________________________
+
+
+//task 51_____________________________________
+
+
+//
+// In this kata, we will make a function to test whether a period is late.
+//
+//     Our function will take three parameters:
+//
+//     last - The Date object with the date of the last period
+//
+// today - The Date object with the date of the check
+//
+// cycleLength - Integer representing the length of the cycle in days
+//
+// Return true if the number of days passed from last to today is greater than cycleLength. Otherwise, return false.
+
+
+//
+// function periodIsLate(last, today, cycleLength) {
+//     return Math.ceil(Math.abs(today.getTime()-last.getTime())/(1000*3600*24))>cycleLength
+// }
+//
+//
+// console.log(periodIsLate(new Date(2016, 6, 13), new Date(2016, 7, 16), 35))
+// console.log(periodIsLate(new Date(2016, 6, 13), new Date(2016, 7, 16), 28))
