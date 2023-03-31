@@ -1483,3 +1483,84 @@
 //
 // console.log(periodIsLate(new Date(2016, 6, 13), new Date(2016, 7, 16), 35))
 // console.log(periodIsLate(new Date(2016, 6, 13), new Date(2016, 7, 16), 28))
+
+
+
+//end___________________________________
+
+
+//task 52_____________________________________
+
+
+//
+// You're at the zoo... all the meerkats look weird. Something has gone terribly wrong - someone has gone and switched their heads and tails around!
+//
+// Save the animals by switching them back. You will be given an array which will have three values (tail, body, head). It is your job to re-arrange the array so that the animal is the right way round (head, body, tail).
+//
+//     Same goes for all the other arrays/lists that you will get in the tests: you have to change the element positions with the same exact logics
+//
+// Simples!
+
+
+
+//
+// function fixTheMeerkat(arr) {
+//     return arr.reverse()
+// }
+//
+//
+// console.log(fixTheMeerkat(["tail", "body", "head"]))//) ["head", "body", "tail"]
+// console.log(fixTheMeerkat(["tails", "body", "heads"]))//) ["heads", "body", "tails"]
+// console.log(fixTheMeerkat(["bottom", "middle", "top"]))//), ["top", "middle", "bottom"]
+
+
+
+
+
+//end___________________________________
+
+
+//task 53_____________________________________
+
+
+
+// An AI has infected a text with a character!!
+//
+//     This text is now fully mutated to this character.
+//
+//     If the text or the character are empty, return an empty string.
+//     There will never be a case when both are empty as nothing is going on!!
+//
+//     Note: The character is a string of length 1 or an empty string.
+//
+//     Example
+// text before = "abc"
+// character   = "z"
+// text after  = "zzz"
+
+
+// function contamination(text, char){
+//     if(text.length>0){
+//         return char.repeat(text.length)
+//     }else if(char==0){
+//         return char
+//     }
+//     return text
+// }
+//
+//
+// console.log(contamination("abc","z"))
+// console.log(contamination("","z"))
+// console.log(contamination("abc",""))
+// console.log(contamination("_3ebzgh4","&"))
+// console.log(contamination("//case"," "))
+
+// describe("Tests", () => {
+//     it("test", () => {
+//         Test.assertEquals(contamination("abc","z"), "zzz")
+//         Test.assertEquals(contamination("","z"), "")
+//         Test.assertEquals(contamination("abc",""), "")
+//         Test.assertEquals(contamination("_3ebzgh4","&"), "&&&&&&&&")
+//         Test.assertEquals(contamination("//case"," "), "      ")
+//     });
+// });
